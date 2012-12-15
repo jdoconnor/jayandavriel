@@ -16,6 +16,32 @@ body {
 	padding-top: 60px;
 	padding-bottom: 40px;
   font-family: 'Forum', cursive;
+  @include background-image(radial-gradient(circle, #b8c6df, #6d88b7));
+  line-height: 1;
+}
+
+.content_section {
+  padding: 10px 15px 10px 15px;
+  margin-bottom:20px;
+  background-color:#fefcea;
+  @include border-radius(10px);
+  @include box-shadow(1px 2px 10px);
+}
+
+p {
+  font-size:1.5em;
+}
+
+.navbar {
+  padding:0px, 0px, 0px, 0px;
+  margin:0px;
+}
+
+.section_title {
+  text-transform: uppercase;
+  font-size:1.8em;
+  line-height: 1;
+  text-align:right;
 }
 
 #getting_married {
@@ -24,13 +50,13 @@ body {
     font-weight: bold;
     text-align: center;
     font-size: 6em;
-    line-height: 1;
+    line-height: 2;
   }
 
   .line2 {
     font-weight: bold;
     text-align: center;
-    font-size: 6em;
+    font-size: 9em;
     line-height: 1;
     -webkit-transform-style: preserve-3d;
     -webkit-animation: wiggletext 5s infinite alternate ease-in-out;
@@ -48,6 +74,15 @@ body {
 }
 
 #photos {
+  #gallery {
+    img{
+      max-height:200px;
+      text-align: justify;
+      float:left;
+      display:inline-block;
+    }
+  }
+
 
 }
 
@@ -56,5 +91,9 @@ body {
 }
 
 #hotel_details {
+  a{
+    font-size:1.6em;
+    line-height: 1.8em;
+  }
 
 }

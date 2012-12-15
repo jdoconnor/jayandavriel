@@ -6,16 +6,53 @@ name: "index"
   :javascript
     // do stuff
 
-#getting_married
-  .line1
-    Jay and Avriel
-  .line2
-    Are getting married
+.span1
+  #getting_married.span10
+    .line1
+      Jay and Avriel
+    .line2
+      Are getting married
 
-#story
+  #story.content_section.span10
+    .section_title
+      How we got here
+    %p On September 10, 2010, Jay and Avriel met through mutual friends at Guthries, a bar with board games.  After playing a heavily-modified-rules game of Monopoly, where we're pretty sure no one won except the inventor of the rules, they set a date to watch the Bears opening day game against the Lions.  Like the Bears did that game, they kept on winning at all things life related.
+    %p We went to Mexico, made friends with birds and discovered our mutual love for waterparks.  Later that year, Avriel moved in with Jay, and forced their cats to get along.
+    %p On May 28th, 2012, Jay proposed to Avriel at the location of their first date (where we watched the Bears game) during a Memorial Day BBQ.
 
-#photos
+  #photos.content_section.span10
+    .section_title
+      good times remembered
+    #gallery
+      =image_tag 'mexico/148699_10100405450470824_6951292_n.jpeg'
+      =image_tag 'mexico/148799_10100404697175434_4849958_n.jpeg'
+      =image_tag 'mexico/150038_10100404696551684_6777011_n.jpeg'
+      =image_tag 'mexico/37130_10100404697085614_836157_n.jpeg'
+      =image_tag 'mexico/73208_10100405450440884_547660_n.jpeg'
+      =image_tag 'mexico/75328_10100404697674434_3934648_n.jpeg'
+      =image_tag 'mexico/76250_10100404697719344_6844957_n.jpeg'
+      =image_tag 'mexico/76493_10100404696516754_8129654_n.jpeg'
 
-#wedding_details
 
-#hotel_details
+  #wedding_details.content_section.span10
+    .section_title
+      Wedding Details
+    #date
+      %p September 21, 2013
+      %p Ceremony starts at 5pm
+      %p Dinner and drinks to follow.
+      %p 18+ only.
+
+  #hotel_details.content_section.span10
+    .section_title
+      Hotel Details
+    #website
+      %a{:href => 'http://www.crowneplazaohare.com', :target => "_blank"} http://www.crowneplazaohare.com/
+    #phone
+      %p
+        Hotel Direct: 847-671-6350
+      %p
+        For Reservations: 866-242-1055
+      %p
+        Fax: 847-671-5406 (if you need to fax them something, you're probably doing something wrong.)
+.span1
